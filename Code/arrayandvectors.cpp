@@ -65,4 +65,38 @@ int main()
 	cout << movie_ratings[0][2] << endl;
 	//벡터 방식으로 접근
 	cout << movie_ratings.at(1).at(2) << endl;
+
+
+	vector<int> vector1;
+	vector<int> vector2;
+
+	vector1.push_back(10);
+	vector1.push_back(20);
+
+	cout << "vector1:" << endl;
+	cout << vector1.at(0) << endl;
+	cout << vector1.at(1) << endl;
+	cout << "vector1은 " << vector1.size() << "개의 원소를 갖고 있음" << endl;
+
+	vector2.push_back(15);
+	vector2.push_back(25);
+
+	cout << "vector2:" << endl;
+	cout << vector2.at(0) << endl;
+	cout << vector2.at(1) << endl;
+	cout << "vector2은 " << vector2.size() << "개의 원소를 갖고 있음" << endl;
+
+
+	vector<vector<int>> vector_2d;
+
+	vector_2d.push_back(vector1);
+	vector_2d.push_back(vector2);
+
+	vector1.at(0) = 100;
+
+	cout << "vector_2d:" << endl;
+	cout << vector_2d.at(0).at(0) << " " << vector_2d.at(0).at(1) << endl;
+	cout << vector_2d.at(1).at(0) << " " << vector_2d.at(1).at(1) << endl;
+
+
 }
